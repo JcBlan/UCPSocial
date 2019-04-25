@@ -22,4 +22,10 @@ export class Usuario
     {
         this.albumes.push( new Album("album1"));
     }
+
+    quitarAlbum(nombre : string)
+    {
+        let album = new Album(nombre);
+        this.albumes.splice(this.albumes.indexOf(album), 1)
+    }
 }

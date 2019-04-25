@@ -1,5 +1,4 @@
 import { expect } from 'chai';
-import { Album } from "../album";
 import { Usuario } from '../usuario';
 
 describe('Test Usuario', () => {
