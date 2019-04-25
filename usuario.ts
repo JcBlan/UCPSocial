@@ -1,13 +1,25 @@
-export class Usuario {
-    
+import { Album } from "./album";
 
-    constructor(){
 
+export class Usuario 
+{
+
+    nombre : string;
+    albumes : Array<Album>
+
+    constructor(nombre : string) 
+    {
+        this.nombre = nombre;
+        this.albumes = [];
     }
-    
 
-    generarEnlaceVerificador() {
+    generarEnlaceVerificador()
+    {
         return "demo";
     }
 
+    agregarAlbum(nombre : string) 
+    {
+        this.albumes.push( new Album("album1"));
+    }
 }

@@ -1,9 +1,9 @@
+
 export class Album
 {
     nombre : string;
 
-    constructor(name : string)
-    {
+    constructor(name : string) {
         this.nombre = name;
     }
 
